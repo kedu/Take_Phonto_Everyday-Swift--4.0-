@@ -7,21 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B76E9E31FD5884E0005EE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76E9E21FD5884E0005EE2C /* AppDelegate.swift */; };
-		0B76E9E51FD5884E0005EE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76E9E41FD5884E0005EE2C /* ViewController.swift */; };
-		0B76E9E81FD5884E0005EE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B76E9E61FD5884E0005EE2C /* Main.storyboard */; };
 		0B76E9EA1FD5884E0005EE2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B76E9E91FD5884E0005EE2C /* Assets.xcassets */; };
-		0B76E9ED1FD5884E0005EE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B76E9EB1FD5884E0005EE2C /* LaunchScreen.storyboard */; };
+		0B76EA101FD597FB0005EE2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA0F1FD597FB0005EE2C /* AppDelegate.swift */; };
+		0B76EA1D1FD598A10005EE2C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA191FD598A10005EE2C /* LoginVC.swift */; };
+		0B76EA1E1FD598A10005EE2C /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA1A1FD598A10005EE2C /* LoginVC.xib */; };
+		0B76EA1F1FD598A10005EE2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA1B1FD598A10005EE2C /* Main.storyboard */; };
+		0B76EA201FD598A10005EE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA1C1FD598A10005EE2C /* ViewController.swift */; };
+		0B76EA231FD598EC0005EE2C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA211FD598EC0005EE2C /* Info.plist */; };
+		0B76EA241FD598EC0005EE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA221FD598EC0005EE2C /* LaunchScreen.storyboard */; };
+		0B76EA451FD59B430005EE2C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA441FD59B430005EE2C /* MainVC.swift */; };
+		0B76EA4A1FD59C360005EE2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA4C1FD59C360005EE2C /* Localizable.strings */; };
+		0B76EA5B1FD5A6000005EE2C /* MainSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA5A1FD5A6000005EE2C /* MainSB.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B76E9DF1FD5884E0005EE2C /* Take_Phonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Take_Phonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B76E9E21FD5884E0005EE2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B76E9E41FD5884E0005EE2C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0B76E9E71FD5884E0005EE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0B76E9E91FD5884E0005EE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0B76E9EC1FD5884E0005EE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0B76E9EE1FD5884E0005EE2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B76E9E91FD5884E0005EE2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		0B76EA0F1FD597FB0005EE2C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0B76EA191FD598A10005EE2C /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		0B76EA1A1FD598A10005EE2C /* LoginVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		0B76EA1B1FD598A10005EE2C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0B76EA1C1FD598A10005EE2C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B76EA211FD598EC0005EE2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B76EA221FD598EC0005EE2C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0B76EA441FD59B430005EE2C /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		0B76EA4B1FD59C360005EE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0B76EA4D1FD59C430005EE2C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		0B76EA4E1FD59C4C0005EE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0B76EA5A1FD5A6000005EE2C /* MainSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainSB.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +67,75 @@
 		0B76E9E11FD5884E0005EE2C /* Take_Phonto */ = {
 			isa = PBXGroup;
 			children = (
-				0B76E9E21FD5884E0005EE2C /* AppDelegate.swift */,
-				0B76E9E41FD5884E0005EE2C /* ViewController.swift */,
-				0B76E9E61FD5884E0005EE2C /* Main.storyboard */,
-				0B76E9E91FD5884E0005EE2C /* Assets.xcassets */,
-				0B76E9EB1FD5884E0005EE2C /* LaunchScreen.storyboard */,
-				0B76E9EE1FD5884E0005EE2C /* Info.plist */,
+				0B76EA061FD596560005EE2C /* AppDelegate */,
+				0B76EA071FD596A40005EE2C /* Moduel */,
+				0B76EA0A1FD596C20005EE2C /* Other */,
+				0B76EA0B1FD596CA0005EE2C /* Tool */,
+				0B76EA0C1FD596D10005EE2C /* Vender */,
 			);
 			path = Take_Phonto;
+			sourceTree = "<group>";
+		};
+		0B76EA061FD596560005EE2C /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0B76EA0F1FD597FB0005EE2C /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		0B76EA071FD596A40005EE2C /* Moduel */ = {
+			isa = PBXGroup;
+			children = (
+				0B76EA081FD596A40005EE2C /* Main */,
+				0B76EA091FD596A40005EE2C /* RegAndLogin */,
+			);
+			path = Moduel;
+			sourceTree = "<group>";
+		};
+		0B76EA081FD596A40005EE2C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0B76EA441FD59B430005EE2C /* MainVC.swift */,
+				0B76EA5A1FD5A6000005EE2C /* MainSB.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0B76EA091FD596A40005EE2C /* RegAndLogin */ = {
+			isa = PBXGroup;
+			children = (
+				0B76EA191FD598A10005EE2C /* LoginVC.swift */,
+				0B76EA1A1FD598A10005EE2C /* LoginVC.xib */,
+				0B76EA1B1FD598A10005EE2C /* Main.storyboard */,
+				0B76EA1C1FD598A10005EE2C /* ViewController.swift */,
+			);
+			path = RegAndLogin;
+			sourceTree = "<group>";
+		};
+		0B76EA0A1FD596C20005EE2C /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0B76EA211FD598EC0005EE2C /* Info.plist */,
+				0B76EA221FD598EC0005EE2C /* LaunchScreen.storyboard */,
+				0B76E9E91FD5884E0005EE2C /* Assets.xcassets */,
+				0B76EA4C1FD59C360005EE2C /* Localizable.strings */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0B76EA0B1FD596CA0005EE2C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		0B76EA0C1FD596D10005EE2C /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +181,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 0B76E9D61FD5884E0005EE2C;
 			productRefGroup = 0B76E9E01FD5884E0005EE2C /* Products */;
@@ -123,9 +198,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B76E9ED1FD5884E0005EE2C /* LaunchScreen.storyboard in Resources */,
+				0B76EA231FD598EC0005EE2C /* Info.plist in Resources */,
+				0B76EA1F1FD598A10005EE2C /* Main.storyboard in Resources */,
+				0B76EA1E1FD598A10005EE2C /* LoginVC.xib in Resources */,
+				0B76EA4A1FD59C360005EE2C /* Localizable.strings in Resources */,
+				0B76EA5B1FD5A6000005EE2C /* MainSB.storyboard in Resources */,
+				0B76EA241FD598EC0005EE2C /* LaunchScreen.storyboard in Resources */,
 				0B76E9EA1FD5884E0005EE2C /* Assets.xcassets in Resources */,
-				0B76E9E81FD5884E0005EE2C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,28 +215,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B76E9E51FD5884E0005EE2C /* ViewController.swift in Sources */,
-				0B76E9E31FD5884E0005EE2C /* AppDelegate.swift in Sources */,
+				0B76EA201FD598A10005EE2C /* ViewController.swift in Sources */,
+				0B76EA451FD59B430005EE2C /* MainVC.swift in Sources */,
+				0B76EA1D1FD598A10005EE2C /* LoginVC.swift in Sources */,
+				0B76EA101FD597FB0005EE2C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0B76E9E61FD5884E0005EE2C /* Main.storyboard */ = {
+		0B76EA4C1FD59C360005EE2C /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0B76E9E71FD5884E0005EE2C /* Base */,
+				0B76EA4B1FD59C360005EE2C /* Base */,
+				0B76EA4D1FD59C430005EE2C /* zh-Hans */,
+				0B76EA4E1FD59C4C0005EE2C /* en */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0B76E9EB1FD5884E0005EE2C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0B76E9EC1FD5884E0005EE2C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -167,6 +242,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -204,7 +280,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -218,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -249,7 +326,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -262,7 +339,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Take_Phonto/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Take_Phonto/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "qq-1218773641.Take-Phonto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,7 +352,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Take_Phonto/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Take_Phonto/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "qq-1218773641.Take-Phonto";
 				PRODUCT_NAME = "$(TARGET_NAME)";
