@@ -18,6 +18,7 @@
 		0B76EA451FD59B430005EE2C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA441FD59B430005EE2C /* MainVC.swift */; };
 		0B76EA4A1FD59C360005EE2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA4C1FD59C360005EE2C /* Localizable.strings */; };
 		0B76EA5B1FD5A6000005EE2C /* MainSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA5A1FD5A6000005EE2C /* MainSB.storyboard */; };
+		9B5D3C5D738B86E68C5B4870 /* Pods_Take_Phonto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D42FBCD3E7E8C162C89DC /* Pods_Take_Phonto.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,9 @@
 		0B76EA4D1FD59C430005EE2C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0B76EA4E1FD59C4C0005EE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0B76EA5A1FD5A6000005EE2C /* MainSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainSB.storyboard; sourceTree = "<group>"; };
+		4BD2CA06D09400FD7341ED0D /* Pods-Take_Phonto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Take_Phonto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Take_Phonto/Pods-Take_Phonto.release.xcconfig"; sourceTree = "<group>"; };
+		5ED3B38E8AA959B1F97BDEAB /* Pods-Take_Phonto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Take_Phonto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Take_Phonto/Pods-Take_Phonto.debug.xcconfig"; sourceTree = "<group>"; };
+		609D42FBCD3E7E8C162C89DC /* Pods_Take_Phonto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Take_Phonto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B5D3C5D738B86E68C5B4870 /* Pods_Take_Phonto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +58,8 @@
 			children = (
 				0B76E9E11FD5884E0005EE2C /* Take_Phonto */,
 				0B76E9E01FD5884E0005EE2C /* Products */,
+				A0E98073A45B230E981590F0 /* Pods */,
+				C09319AD6CFBBCC540EAFC94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +145,23 @@
 			path = Vender;
 			sourceTree = "<group>";
 		};
+		A0E98073A45B230E981590F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5ED3B38E8AA959B1F97BDEAB /* Pods-Take_Phonto.debug.xcconfig */,
+				4BD2CA06D09400FD7341ED0D /* Pods-Take_Phonto.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C09319AD6CFBBCC540EAFC94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				609D42FBCD3E7E8C162C89DC /* Pods_Take_Phonto.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B76E9F11FD5884E0005EE2C /* Build configuration list for PBXNativeTarget "Take_Phonto" */;
 			buildPhases = (
+				CD33831E6B6D9B010B699923 /* [CP] Check Pods Manifest.lock */,
 				0B76E9DB1FD5884E0005EE2C /* Sources */,
 				0B76E9DC1FD5884E0005EE2C /* Frameworks */,
 				0B76E9DD1FD5884E0005EE2C /* Resources */,
+				5AA8CD9332F15F3A76339D55 /* [CP] Embed Pods Frameworks */,
+				CF8D70A88890A7C73E5CFE10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +236,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AA8CD9332F15F3A76339D55 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Take_Phonto/Pods-Take_Phonto-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD33831E6B6D9B010B699923 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF8D70A88890A7C73E5CFE10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Take_Phonto/Pods-Take_Phonto-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B76E9DB1FD5884E0005EE2C /* Sources */ = {
@@ -337,6 +412,7 @@
 		};
 		0B76E9F21FD5884E0005EE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ED3B38E8AA959B1F97BDEAB /* Pods-Take_Phonto.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Take_Phonto/Other/Info.plist";
@@ -350,6 +426,7 @@
 		};
 		0B76E9F31FD5884E0005EE2C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BD2CA06D09400FD7341ED0D /* Pods-Take_Phonto.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "$(SRCROOT)/Take_Phonto/Other/Info.plist";
