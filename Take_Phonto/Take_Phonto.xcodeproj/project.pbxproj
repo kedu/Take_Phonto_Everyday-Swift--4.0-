@@ -18,6 +18,7 @@
 		0B76EA451FD59B430005EE2C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA441FD59B430005EE2C /* MainVC.swift */; };
 		0B76EA4A1FD59C360005EE2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA4C1FD59C360005EE2C /* Localizable.strings */; };
 		0B76EA5B1FD5A6000005EE2C /* MainSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA5A1FD5A6000005EE2C /* MainSB.storyboard */; };
+		0B76EA5D1FD6FF710005EE2C /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA5C1FD6FF710005EE2C /* AppKey.swift */; };
 		9B5D3C5D738B86E68C5B4870 /* Pods_Take_Phonto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D42FBCD3E7E8C162C89DC /* Pods_Take_Phonto.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		0B76EA4D1FD59C430005EE2C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0B76EA4E1FD59C4C0005EE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0B76EA5A1FD5A6000005EE2C /* MainSB.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainSB.storyboard; sourceTree = "<group>"; };
+		0B76EA5C1FD6FF710005EE2C /* AppKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKey.swift; sourceTree = "<group>"; };
 		4BD2CA06D09400FD7341ED0D /* Pods-Take_Phonto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Take_Phonto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Take_Phonto/Pods-Take_Phonto.release.xcconfig"; sourceTree = "<group>"; };
 		5ED3B38E8AA959B1F97BDEAB /* Pods-Take_Phonto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Take_Phonto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Take_Phonto/Pods-Take_Phonto.debug.xcconfig"; sourceTree = "<group>"; };
 		609D42FBCD3E7E8C162C89DC /* Pods_Take_Phonto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Take_Phonto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				0B76EA0F1FD597FB0005EE2C /* AppDelegate.swift */,
+				0B76EA5C1FD6FF710005EE2C /* AppKey.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -244,9 +247,20 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Take_Phonto/Pods-Take_Phonto-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -259,13 +273,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Take_Phonto-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CF8D70A88890A7C73E5CFE10 /* [CP] Copy Pods Resources */ = {
@@ -294,6 +311,7 @@
 				0B76EA451FD59B430005EE2C /* MainVC.swift in Sources */,
 				0B76EA1D1FD598A10005EE2C /* LoginVC.swift in Sources */,
 				0B76EA101FD597FB0005EE2C /* AppDelegate.swift in Sources */,
+				0B76EA5D1FD6FF710005EE2C /* AppKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

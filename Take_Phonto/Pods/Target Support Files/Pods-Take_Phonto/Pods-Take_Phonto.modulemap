@@ -1,0 +1,6 @@
+framework module Pods_Take_Phonto {
+  umbrella header "Pods-Take_Phonto-umbrella.h"
+
+  export *
+  module * { export * }
+}
