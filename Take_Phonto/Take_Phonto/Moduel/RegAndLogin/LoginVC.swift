@@ -34,6 +34,12 @@ class LoginVC: UIViewController {
         print("我要登录了")
         
         
+        //
+        
+        
+        
+        UIApplication.shared.keyWindow?.rootViewController = UINavigationController.init(rootViewController: MainVC())
+        
         
     }
     

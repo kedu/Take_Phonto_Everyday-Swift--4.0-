@@ -151,6 +151,9 @@ class ViewController: UIViewController {
         
         self.navigationController?.pushViewController(LoginVC(), animated: true)
         
+        
+        return
+        
         let handler : SMSGetCodeResultHandler! = { (error : Error?) in
             if error ==  nil {
                 print("验证成功")
