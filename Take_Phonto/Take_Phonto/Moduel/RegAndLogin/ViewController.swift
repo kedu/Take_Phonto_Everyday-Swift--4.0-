@@ -8,6 +8,10 @@
 
 import UIKit
 
+import Alamofire
+
+
+
 class ViewController: UIViewController {
     
     
@@ -43,6 +47,102 @@ class ViewController: UIViewController {
     
 
     @IBAction func getCodeAction(_ sender: Any) {
+        
+        let handler : SMSGetCodeResultHandler! = { (error : Error?) in
+            
+            if error != nil {//可选项也算有值的
+            
+                print("发送成功")
+            
+            }
+            //            if error ==  nil {
+//                print("发送成功")
+//            }
+//            
+//            guard let error = error else {
+//                print("发送成功")
+//                return
+//            }
+//            
+//            if let error = error {
+//                
+//                 print("发送成功")
+//            }
+//            
+            
+//            if let
+//            func doSomething(str: String?)
+//            {
+//                let v: String! = str //拿不可选项去取可选项的值,如果无值,直接就为空了
+//                if v != nil
+//                {
+//                    // use v to do something
+//                }
+//            }
+            
+//            func doSomething(str: String?)
+//            {
+//                if let v = str
+//                {
+//                    // use v to do something
+//                }
+//            }
+//            
+//            func doSomething(str: String?)
+//            {
+//                let v: String! = str
+//                if v == nil
+//                {
+//                    return
+//                }
+//                
+//                // use v to do something
+//            }
+//            这样做可以避免过多的嵌套。上面代码实在太常见了，swift也提供一个guard这个语法糖，用guard可以改写成：func doSomething(str: String?)
+//            {
+//                guard let v = str else { return }
+//                
+//                // use v to do something
+//            }
+            
+         
+            
+        }
+        
+        SMSSDK.getVerificationCode(by: SMSGetCodeMethodSMS, phoneNumber: phoneNumTextfield.text!, zone: "86", result: handler)
+        
+        
+        
+        
+        
+
+
+//        [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:@"13800138000" zone:@"86" result:^(NSError *error) {
+//            
+//            if (!error)
+//            {
+//            // 请求成功
+//            }
+//            else
+//            {
+//            // error
+//            }
+//            }];
+//        
+//        [SMSSDK commitVerificationCode:@"1234" phoneNumber:@"13800138000" zone:@"86" result:^(NSError *error) {
+//            
+//            if (!error)
+//            {
+//            // 验证成功
+//            }
+//            else
+//            {
+//            // error
+//            }
+//            }];
+//        
+        
+        
     }
     
     
@@ -51,7 +151,29 @@ class ViewController: UIViewController {
         
         self.navigationController?.pushViewController(LoginVC(), animated: true)
         
-        
+        let handler : SMSGetCodeResultHandler! = { (error : Error?) in
+            if error ==  nil {
+                print("验证成功")
+            }
+            
+            //            guard let error = error else {
+            //                print("发送成功")
+            //                return
+            //            }
+            //
+            //            if let error = error {
+            //
+            //                 print("发送成功")
+            //            }
+            //            
+            
+            
+            
+            
+        }
+
+        //判断手机号码是否正确
+        SMSSDK.commitVerificationCode(codeTextfield.text!, phoneNumber: phoneNumTextfield.text!, zone: "86",result: handler)
         
         
         
