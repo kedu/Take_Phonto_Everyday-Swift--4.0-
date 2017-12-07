@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import <SMS_SDK/SMSSDK.h>
+#import <SMS_SDK/SMSSDK+ContactFriends.h>
 
 @interface OCFile : NSObject
 
