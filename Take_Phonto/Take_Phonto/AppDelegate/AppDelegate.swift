@@ -21,9 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Override point for customization after application launch.
         //9.0 -> 8.0
-//        window = UIWindow()
-//        window?.makeKeyAndVisible()
-//        window?.rootViewController = MainVC()
+        window = UIWindow()
+        
+        
+        window?.makeKeyAndVisible()
+        
+        var sb = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        var vc = UINavigationController(rootViewController: sb.instantiateViewController(withIdentifier: "sb"))
+        
+        
+        window?.rootViewController = vc
         
         
         
