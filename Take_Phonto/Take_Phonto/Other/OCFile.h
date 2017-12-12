@@ -10,6 +10,8 @@
 
 #import <SMS_SDK/SMSSDK.h>
 #import <SMS_SDK/SMSSDK+ContactFriends.h>
+#import <Masonry/Masonry.h>
+
 
 @interface OCFile : NSObject
 

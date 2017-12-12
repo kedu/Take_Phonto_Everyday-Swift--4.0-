@@ -58,7 +58,7 @@
                 <outlet property="imgView" destination="U0a-Z3-2N6" id="vcy-iY-rUb"/>
                 <outlet property="titleLabel" destination="FSI-Gk-Ngr" id="A3n-cK-97u"/>
             </connections>
-            <point key="canvasLocation" x="137.5" y="27.5"/>
+            <point key="canvasLocation" x="39" y="9"/>
         </tableViewCell>
     </objects>
 </document>

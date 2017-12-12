@@ -66,6 +66,18 @@ class MainVC: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         self.view.addSubview(tableView!)
         
         
+        tableView?.mas_makeConstraints({ (make) in
+            
+  
+            
+            
+            make?.edges.equalTo()(0)
+            
+            
+            
+            
+            
+        })
         
         
         
@@ -90,10 +102,40 @@ class MainVC: UIViewController ,UITableViewDelegate,UITableViewDataSource{
     }
     
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return UITableViewAutomaticDimension
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return 1
+    }
     
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return 10
+    }
     
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: cellReuse)
+        
+        
+        
+        
+        
+        
+        
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("点击了\(indexPath)")
+    }
     
 
 
