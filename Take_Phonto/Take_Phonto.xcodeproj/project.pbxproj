@@ -15,10 +15,12 @@
 		0B76EA201FD598A10005EE2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA1C1FD598A10005EE2C /* ViewController.swift */; };
 		0B76EA231FD598EC0005EE2C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA211FD598EC0005EE2C /* Info.plist */; };
 		0B76EA241FD598EC0005EE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA221FD598EC0005EE2C /* LaunchScreen.storyboard */; };
-		0B76EA451FD59B430005EE2C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA441FD59B430005EE2C /* MainVC.swift */; };
 		0B76EA4A1FD59C360005EE2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA4C1FD59C360005EE2C /* Localizable.strings */; };
-		0B76EA5D1FD6FF710005EE2C /* AppKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA5C1FD6FF710005EE2C /* AppKey.swift */; };
-		0B76EA611FD968580005EE2C /* OCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B76EA601FD968580005EE2C /* OCFile.m */; };
+		184D8D6D1FD7C0A200A19211 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D8D6B1FD7C0A200A19211 /* MainVC.swift */; };
+		184D8D6E1FD7C0A200A19211 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184D8D6C1FD7C0A200A19211 /* MainVC.xib */; };
+		184D8D741FD7C0F600A19211 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D8D721FD7C0F600A19211 /* MainCell.swift */; };
+		184D8D751FD7C0F600A19211 /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184D8D731FD7C0F600A19211 /* MainCell.xib */; };
+		187163751FDFB128008A85DB /* OCFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 187163741FDFB128008A85DB /* OCFile.m */; };
 		9B5D3C5D738B86E68C5B4870 /* Pods_Take_Phonto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 609D42FBCD3E7E8C162C89DC /* Pods_Take_Phonto.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,14 +34,16 @@
 		0B76EA1C1FD598A10005EE2C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B76EA211FD598EC0005EE2C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B76EA221FD598EC0005EE2C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0B76EA441FD59B430005EE2C /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		0B76EA4B1FD59C360005EE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0B76EA4D1FD59C430005EE2C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0B76EA4E1FD59C4C0005EE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		0B76EA5C1FD6FF710005EE2C /* AppKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppKey.swift; sourceTree = "<group>"; };
-		0B76EA5E1FD968570005EE2C /* Take_Phonto-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Take_Phonto-Bridging-Header.h"; sourceTree = "<group>"; };
-		0B76EA5F1FD968580005EE2C /* OCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCFile.h; sourceTree = "<group>"; };
-		0B76EA601FD968580005EE2C /* OCFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCFile.m; sourceTree = "<group>"; };
+		184D8D6B1FD7C0A200A19211 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		184D8D6C1FD7C0A200A19211 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		184D8D721FD7C0F600A19211 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		184D8D731FD7C0F600A19211 /* MainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		187163721FDFB128008A85DB /* Take_Phonto-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Take_Phonto-Bridging-Header.h"; path = "Take_Phonto/Other/Take_Phonto-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		187163731FDFB128008A85DB /* OCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCFile.h; path = Take_Phonto/Other/OCFile.h; sourceTree = SOURCE_ROOT; };
+		187163741FDFB128008A85DB /* OCFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCFile.m; path = Take_Phonto/Other/OCFile.m; sourceTree = SOURCE_ROOT; };
 		4BD2CA06D09400FD7341ED0D /* Pods-Take_Phonto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Take_Phonto.release.xcconfig"; path = "Pods/Target Support Files/Pods-Take_Phonto/Pods-Take_Phonto.release.xcconfig"; sourceTree = "<group>"; };
 		5ED3B38E8AA959B1F97BDEAB /* Pods-Take_Phonto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Take_Phonto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Take_Phonto/Pods-Take_Phonto.debug.xcconfig"; sourceTree = "<group>"; };
 		609D42FBCD3E7E8C162C89DC /* Pods_Take_Phonto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Take_Phonto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				0B76EA0F1FD597FB0005EE2C /* AppDelegate.swift */,
-				0B76EA5C1FD6FF710005EE2C /* AppKey.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -108,7 +111,9 @@
 		0B76EA081FD596A40005EE2C /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				0B76EA441FD59B430005EE2C /* MainVC.swift */,
+				184D8D711FD7C0C000A19211 /* Controller */,
+				184D8D701FD7C0B900A19211 /* Model */,
+				184D8D6F1FD7C0AC00A19211 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -131,9 +136,6 @@
 				0B76EA221FD598EC0005EE2C /* LaunchScreen.storyboard */,
 				0B76E9E91FD5884E0005EE2C /* Assets.xcassets */,
 				0B76EA4C1FD59C360005EE2C /* Localizable.strings */,
-				0B76EA5F1FD968580005EE2C /* OCFile.h */,
-				0B76EA601FD968580005EE2C /* OCFile.m */,
-				0B76EA5E1FD968570005EE2C /* Take_Phonto-Bridging-Header.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -141,6 +143,9 @@
 		0B76EA0B1FD596CA0005EE2C /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				187163731FDFB128008A85DB /* OCFile.h */,
+				187163741FDFB128008A85DB /* OCFile.m */,
+				187163721FDFB128008A85DB /* Take_Phonto-Bridging-Header.h */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -150,6 +155,31 @@
 			children = (
 			);
 			path = Vender;
+			sourceTree = "<group>";
+		};
+		184D8D6F1FD7C0AC00A19211 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				184D8D721FD7C0F600A19211 /* MainCell.swift */,
+				184D8D731FD7C0F600A19211 /* MainCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		184D8D701FD7C0B900A19211 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		184D8D711FD7C0C000A19211 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				184D8D6B1FD7C0A200A19211 /* MainVC.swift */,
+				184D8D6C1FD7C0A200A19211 /* MainVC.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		A0E98073A45B230E981590F0 /* Pods */ = {
@@ -235,9 +265,11 @@
 			files = (
 				0B76EA231FD598EC0005EE2C /* Info.plist in Resources */,
 				0B76EA1F1FD598A10005EE2C /* Main.storyboard in Resources */,
+				184D8D751FD7C0F600A19211 /* MainCell.xib in Resources */,
 				0B76EA1E1FD598A10005EE2C /* LoginVC.xib in Resources */,
 				0B76EA4A1FD59C360005EE2C /* Localizable.strings in Resources */,
 				0B76EA241FD598EC0005EE2C /* LaunchScreen.storyboard in Resources */,
+				184D8D6E1FD7C0A200A19211 /* MainVC.xib in Resources */,
 				0B76E9EA1FD5884E0005EE2C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +285,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Take_Phonto/Pods-Take_Phonto-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -261,6 +294,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -312,11 +346,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B76EA201FD598A10005EE2C /* ViewController.swift in Sources */,
-				0B76EA451FD59B430005EE2C /* MainVC.swift in Sources */,
+				184D8D6D1FD7C0A200A19211 /* MainVC.swift in Sources */,
 				0B76EA1D1FD598A10005EE2C /* LoginVC.swift in Sources */,
-				0B76EA611FD968580005EE2C /* OCFile.m in Sources */,
+				187163751FDFB128008A85DB /* OCFile.m in Sources */,
 				0B76EA101FD597FB0005EE2C /* AppDelegate.swift in Sources */,
-				0B76EA5D1FD6FF710005EE2C /* AppKey.swift in Sources */,
+				184D8D741FD7C0F600A19211 /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

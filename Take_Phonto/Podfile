@@ -16,6 +16,7 @@ pod 'ReactiveCocoa'
 
 
 
+ pod 'Masonry', '~> 1.0.2'
 
    
 

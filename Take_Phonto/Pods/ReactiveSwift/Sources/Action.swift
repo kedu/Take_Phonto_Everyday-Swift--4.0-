@@ -95,8 +95,7 @@ public final class Action<Input, Output, Error: Swift.Error> {
 	public init<State: PropertyProtocol>(state: State, enabledIf isEnabled: @escaping (State.Value) -> Bool, execute: @escaping (State.Value, Input) -> SignalProducer<Output, Error>) {
 		let isUserEnabled = isEnabled
 
-		deinitToken = Lifetime.Token()
-		lifetime = Lifetime(deinitToken)
+		(lifetime, deinitToken) = Lifetime.make()
 
 		// `Action` retains its state property.
 		lifetime.observeEnded { _ = state }
@@ -161,7 +160,7 @@ public final class Action<Input, Output, Error: Swift.Error> {
 				}
 
 				let interruptHandle = execute(state, input).start { event in
-					observer.action(event.mapError(ActionError.producerFailed))
+					observer.send(event.mapError(ActionError.producerFailed))
 					action.eventsObserver.send(value: event)
 				}
 

@@ -34,7 +34,7 @@ class LoginVC: UIViewController {
         print("我要登录了")
         
         
-        //
+
         
         
         
@@ -42,12 +42,11 @@ class LoginVC: UIViewController {
         
         
        appDelegte?.window??.rootViewController = UINavigationController.init(rootViewController: MainVC())
-        
-     
-        
+
         
         
         
+
         
         
     }
