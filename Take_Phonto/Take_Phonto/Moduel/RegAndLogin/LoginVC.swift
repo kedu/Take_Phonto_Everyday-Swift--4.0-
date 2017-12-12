@@ -38,7 +38,16 @@ class LoginVC: UIViewController {
         
         
         
-        UIApplication.shared.keyWindow?.rootViewController = UINavigationController.init(rootViewController: MainVC())
+        let appDelegte  = UIApplication.shared.delegate
+        
+        
+       appDelegte?.window??.rootViewController = UINavigationController.init(rootViewController: MainVC())
+        
+     
+        
+        
+        
+        
         
         
     }

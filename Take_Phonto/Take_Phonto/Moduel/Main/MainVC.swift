@@ -10,6 +10,9 @@ import UIKit
 
 class MainVC: UIViewController {
     
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -27,7 +30,9 @@ class MainVC: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor.white
-
+        
+        
+        print("我被大一了")
     }
 
     override func didReceiveMemoryWarning() {
