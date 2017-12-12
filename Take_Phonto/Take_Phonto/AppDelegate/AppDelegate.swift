@@ -15,8 +15,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+//        [SMSSDK enableAppContactFriends:YES];
+        //禁止调用通讯录
+        SMSSDK.enableAppContactFriends(false)
+        
         // Override point for customization after application launch.
         //9.0 -> 8.0
+        window = UIWindow()
+        
+        
+        window?.makeKeyAndVisible()
+        
+        var sb = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        var vc = UINavigationController(rootViewController: sb.instantiateViewController(withIdentifier: "sb"))
+        
+        
+        window?.rootViewController = vc
+        
+        
         
         return true
     }
