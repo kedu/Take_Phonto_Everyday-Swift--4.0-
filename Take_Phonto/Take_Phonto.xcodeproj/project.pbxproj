@@ -16,6 +16,7 @@
 		0B76EA231FD598EC0005EE2C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA211FD598EC0005EE2C /* Info.plist */; };
 		0B76EA241FD598EC0005EE2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA221FD598EC0005EE2C /* LaunchScreen.storyboard */; };
 		0B76EA4A1FD59C360005EE2C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B76EA4C1FD59C360005EE2C /* Localizable.strings */; };
+		18482E911FE0C4FA00E8BB7E /* SendPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18482E901FE0C4FA00E8BB7E /* SendPostVC.swift */; };
 		184D8D6D1FD7C0A200A19211 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D8D6B1FD7C0A200A19211 /* MainVC.swift */; };
 		184D8D6E1FD7C0A200A19211 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 184D8D6C1FD7C0A200A19211 /* MainVC.xib */; };
 		184D8D741FD7C0F600A19211 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184D8D721FD7C0F600A19211 /* MainCell.swift */; };
@@ -37,6 +38,7 @@
 		0B76EA4B1FD59C360005EE2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		0B76EA4D1FD59C430005EE2C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		0B76EA4E1FD59C4C0005EE2C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		18482E901FE0C4FA00E8BB7E /* SendPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPostVC.swift; sourceTree = "<group>"; };
 		184D8D6B1FD7C0A200A19211 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		184D8D6C1FD7C0A200A19211 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 		184D8D721FD7C0F600A19211 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		0B76EA071FD596A40005EE2C /* Moduel */ = {
 			isa = PBXGroup;
 			children = (
+				18482E8F1FE0C4CB00E8BB7E /* SendPost */,
 				0B76EA081FD596A40005EE2C /* Main */,
 				0B76EA091FD596A40005EE2C /* RegAndLogin */,
 			);
@@ -155,6 +158,14 @@
 			children = (
 			);
 			path = Vender;
+			sourceTree = "<group>";
+		};
+		18482E8F1FE0C4CB00E8BB7E /* SendPost */ = {
+			isa = PBXGroup;
+			children = (
+				18482E901FE0C4FA00E8BB7E /* SendPostVC.swift */,
+			);
+			path = SendPost;
 			sourceTree = "<group>";
 		};
 		184D8D6F1FD7C0AC00A19211 /* View */ = {
@@ -351,6 +362,7 @@
 				187163751FDFB128008A85DB /* OCFile.m in Sources */,
 				0B76EA101FD597FB0005EE2C /* AppDelegate.swift in Sources */,
 				184D8D741FD7C0F600A19211 /* MainCell.swift in Sources */,
+				18482E911FE0C4FA00E8BB7E /* SendPostVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
