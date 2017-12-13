@@ -7,17 +7,15 @@
 ///
 /// - returns: The matching method, or `nil` if none is found.
 internal func class_getImmediateMethod(_ `class`: AnyClass, _ selector: Selector) -> Method? {
-	var total: UInt32 = 0
+	if let buffer = class_copyMethodList(`class`, nil) {
+		defer { free(buffer) }
 
-	if let methods = class_copyMethodList(`class`, &total) {
-		defer { free(methods) }
-
-		for index in 0 ..< Int(total) {
-			let method = methods[index]
-
+		var iterator = buffer
+		while let method = iterator.pointee {
 			if method_getName(method) == selector {
 				return method
 			}
+			iterator = iterator.advanced(by: 1)
 		}
 	}
 

@@ -7,7 +7,7 @@ extension Reactive where Base: UIGestureRecognizer {
 	///
 	/// - returns: A trigger signal.
 	public var stateChanged: Signal<Base, NoError> {
-		return Signal { observer, signalLifetime in
+		return Signal { observer in
 			let receiver = CocoaTarget<Base>(observer) { gestureRecognizer in
 				return gestureRecognizer as! Base
 			}
@@ -15,7 +15,7 @@ extension Reactive where Base: UIGestureRecognizer {
 			
 			let disposable = lifetime.ended.observeCompleted(observer.sendCompleted)
 			
-			signalLifetime.observeEnded { [weak base] in
+			return AnyDisposable { [weak base = self.base] in
 				disposable?.dispose()
 				base?.removeTarget(receiver, action: #selector(receiver.invoke))
 			}

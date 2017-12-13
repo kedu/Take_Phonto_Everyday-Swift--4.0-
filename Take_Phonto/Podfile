@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+ platform :ios, '8.0'
 
 target 'Take_Phonto' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -12,11 +12,12 @@ target 'Take_Phonto' do
  
  pod 'pop', '~> 1.0'
 
-pod 'ReactiveCocoa'
-
+ pod 'ReactiveCocoa', '~> 6.0'
 
 
  pod 'Masonry', '~> 1.0.2'
+ 
+ pod 'SDWebImage', '~>4.0.0'
 
    
 

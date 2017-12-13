@@ -42,7 +42,9 @@ internal struct UnsafeAtomicState<State: RawRepresentable> where State.RawValue 
 	/// - returns: `true` if the current state matches the expected state.
 	///            `false` otherwise.
 	internal func `is`(_ expected: State) -> Bool {
-		return expected.rawValue == value.pointee
+		return OSAtomicCompareAndSwap32Barrier(expected.rawValue,
+		                                       expected.rawValue,
+		                                       value)
 	}
 
 	/// Try to transition from the expected current state to the specified next
@@ -80,7 +82,7 @@ internal struct UnsafeAtomicState<State: RawRepresentable> where State.RawValue 
 	/// - returns: `true` if the current state matches the expected state.
 	///            `false` otherwise.
 	internal func `is`(_ expected: State) -> Bool {
-		return value.value == expected.rawValue
+		return value.modify { $0 == expected.rawValue }
 	}
 
 	/// Try to transition from the expected current state to the specified next
@@ -155,9 +157,7 @@ internal class Lock {
 				attr.deallocate(capacity: 1)
 			}
 
-			// Darwin pthread for 32-bit ARM somehow returns `EAGAIN` when
-			// using `trylock` on a `PTHREAD_MUTEX_ERRORCHECK` mutex.
-			#if DEBUG && !arch(arm)
+			#if DEBUG
 			pthread_mutexattr_settype(attr, Int32(recursive ? PTHREAD_MUTEX_RECURSIVE : PTHREAD_MUTEX_ERRORCHECK))
 			#else
 			pthread_mutexattr_settype(attr, Int32(recursive ? PTHREAD_MUTEX_RECURSIVE : PTHREAD_MUTEX_NORMAL))

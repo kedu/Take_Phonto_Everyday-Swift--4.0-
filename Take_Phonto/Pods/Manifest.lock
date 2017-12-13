@@ -3,11 +3,14 @@ PODS:
   - Masonry (1.0.2)
   - MOBFoundation (3.0.6)
   - pop (1.0.10)
-  - ReactiveCocoa (7.0.1):
-    - ReactiveSwift (~> 3.0)
-  - ReactiveSwift (3.0.0):
+  - ReactiveCocoa (6.0.2):
+    - ReactiveSwift (~> 2.0)
+  - ReactiveSwift (2.0.1):
     - Result (~> 3.2)
   - Result (3.2.4)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
   - SMSSDK (3.0.1):
     - MOBFoundation
 
@@ -15,7 +18,8 @@ DEPENDENCIES:
   - Alamofire
   - Masonry (~> 1.0.2)
   - pop (~> 1.0)
-  - ReactiveCocoa
+  - ReactiveCocoa (~> 6.0)
+  - SDWebImage (~> 4.0.0)
   - SMSSDK
 
 SPEC CHECKSUMS:
@@ -23,11 +27,12 @@ SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MOBFoundation: 6f6ec1c2513278551f1a808b5692e983d99e5069
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
-  ReactiveCocoa: a1b5d502d0d1534f9a72981a485b297b17127f83
-  ReactiveSwift: d9fe0db33c1aaabecb092e8de83cf52875c0de6f
+  ReactiveCocoa: 9dcbd8275374f35a6e5fcce01a93b860a7b92c44
+  ReactiveSwift: 60a29ff35988a964fd2bb759755cb6594de523fc
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   SMSSDK: a811c8ea6e89393097037b7cf6493248a40e50f0
 
-PODFILE CHECKSUM: af01ffc4cb2359a80395b36c546174e3f8063fd1
+PODFILE CHECKSUM: 4009e69c95312621d5c638ca975074ce2ac97e7f
 
 COCOAPODS: 1.3.1
