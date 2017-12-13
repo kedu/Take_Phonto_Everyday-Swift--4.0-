@@ -8,9 +8,14 @@
 
 import UIKit
 
+import ReactiveCocoa
+import ReactiveSwift
+
 
 
 class MainVC: UIViewController ,UITableViewDelegate,UITableViewDataSource{
+    
+    var sendPostBtn : UIButton?
     
   
     var tableView : UITableView?
@@ -81,6 +86,54 @@ class MainVC: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         
         
         
+        sendPostBtn = UIButton(type: .custom)
+        
+        sendPostBtn?.setTitle("发帖", for: .normal)
+        sendPostBtn?.setTitleColor(UIColor.gray, for: .normal)
+        sendPostBtn?.titleLabel?.font = UIFont.systemFont(ofSize: 15)
+        
+        sendPostBtn?.backgroundColor = UIColor.red
+
+
+    
+        
+      sendPostBtn?.reactive.controlEvents(.touchUpInside).observeValues({ (btn) in
+            
+            
+            print(btn)
+            
+        })
+
+        
+        
+        sendPostBtn?.addTarget(self, action: #selector(gotoSendPost(button:)), for: .touchUpInside)
+        
+        
+        
+        
+        self.view.addSubview(sendPostBtn!)
+        
+        
+        
+        sendPostBtn?.mas_makeConstraints({ (make) in
+            
+            make?.bottom.equalTo()(-30)
+            make?.right.equalTo()(-20)
+            make?.width.equalTo()(60)
+            make?.height.equalTo()(40)
+            
+            
+            
+        })
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
@@ -137,7 +190,26 @@ class MainVC: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         print("点击了\(indexPath)")
     }
     
+    
+    func gotoSendPost(button : UIButton?) -> Void {
+        
+        print("我去发帖了啊")
+        
+    }
+    
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
