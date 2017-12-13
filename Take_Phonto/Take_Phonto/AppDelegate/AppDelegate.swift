@@ -26,9 +26,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.makeKeyAndVisible()
         
-        var sb = UIStoryboard.init(name: "Main", bundle: nil)
+        let sb = UIStoryboard.init(name: "Main", bundle: nil)
         
-        var vc = UINavigationController(rootViewController: sb.instantiateViewController(withIdentifier: "sb"))
+        let vc = UINavigationController(rootViewController: sb.instantiateViewController(withIdentifier: "sb"))
         
         
         window?.rootViewController = vc
