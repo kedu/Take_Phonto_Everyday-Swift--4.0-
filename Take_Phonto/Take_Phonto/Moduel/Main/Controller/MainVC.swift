@@ -195,6 +195,10 @@ class MainVC: UIViewController ,UITableViewDelegate,UITableViewDataSource{
         
         print("我去发帖了啊")
         
+        
+        self.navigationController?.pushViewController(SendPostVC(), animated: true)
+        
+        
     }
     
 
