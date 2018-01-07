@@ -55,55 +55,7 @@ class ViewController: UIViewController {
                 print("发送成功")
             
             }
-            //            if error ==  nil {
-//                print("发送成功")
-//            }
-//            
-//            guard let error = error else {
-//                print("发送成功")
-//                return
-//            }
-//            
-//            if let error = error {
-//                
-//                 print("发送成功")
-//            }
-//            
-            
-//            if let
-//            func doSomething(str: String?)
-//            {
-//                let v: String! = str //拿不可选项去取可选项的值,如果无值,直接就为空了
-//                if v != nil
-//                {
-//                    // use v to do something
-//                }
-//            }
-            
-//            func doSomething(str: String?)
-//            {
-//                if let v = str
-//                {
-//                    // use v to do something
-//                }
-//            }
-//            
-//            func doSomething(str: String?)
-//            {
-//                let v: String! = str
-//                if v == nil
-//                {
-//                    return
-//                }
-//                
-//                // use v to do something
-//            }
-//            这样做可以避免过多的嵌套。上面代码实在太常见了，swift也提供一个guard这个语法糖，用guard可以改写成：func doSomething(str: String?)
-//            {
-//                guard let v = str else { return }
-//                
-//                // use v to do something
-//            }
+  
             
          
             
@@ -112,35 +64,8 @@ class ViewController: UIViewController {
         SMSSDK.getVerificationCode(by: SMSGetCodeMethodSMS, phoneNumber: phoneNumTextfield.text!, zone: "86", result: handler)
         
         
+ 
         
-        
-        
-
-
-//        [SMSSDK getVerificationCodeByMethod:SMSGetCodeMethodSMS phoneNumber:@"13800138000" zone:@"86" result:^(NSError *error) {
-//            
-//            if (!error)
-//            {
-//            // 请求成功
-//            }
-//            else
-//            {
-//            // error
-//            }
-//            }];
-//        
-//        [SMSSDK commitVerificationCode:@"1234" phoneNumber:@"13800138000" zone:@"86" result:^(NSError *error) {
-//            
-//            if (!error)
-//            {
-//            // 验证成功
-//            }
-//            else
-//            {
-//            // error
-//            }
-//            }];
-//        
         
         
     }
@@ -148,29 +73,95 @@ class ViewController: UIViewController {
     
     @IBAction func registerAction(_ sender: Any) {
         
+        //判断值是否合法
+        if (userNameTextfield.text?.characters.count)! <= 0 || (phoneNumTextfield.text?.characters.count)! <= 0 || (pwdTextfield.text?.characters.count)! <= 0 || (pwdTextfield.text != confimTextfield.text)  {
+            
+            
+            print("输入不合法,请检查")
+            
+            return;
+            
+        }
         
-        self.navigationController?.pushViewController(LoginVC(), animated: true)
+        let parameters: Parameters = [
+            "username": userNameTextfield.text ?? 0,
+            "pwd": pwdTextfield.text!,
+            "phone": phoneNumTextfield.text!,
+        ]
+ 
+        
+        print(parameters)
         
         
-        return
+        let urlStr = BaseUrl.appending(regApi)
+        
+        
+        request(urlStr , method: .post , parameters: parameters).responseJSON{ (response) in
+            
+
+        
+            print("\(String(describing: response.data!))")
+            
+
+            
+            let json: [String: Any] = try! JSONSerialization.jsonObject(with: response.data!, options: .mutableContainers) as! [String : Any]
+            
+            //可选值获取指定属性
+
+
+            print(json)
+            
+            if json["code"] as? String == "200" {
+            
+             self.navigationController?.pushViewController(LoginVC(), animated: true)
+                
+            
+            }else {
+                
+                print("失败")
+            
+            
+            
+            }
+            
+        
+            
+                
+            
+            
+       
+            
+        }
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+        
+        
+        return;
         
         let handler : SMSGetCodeResultHandler! = { (error : Error?) in
             if error ==  nil {
                 print("验证成功")
             }
-            
-            //            guard let error = error else {
-            //                print("发送成功")
-            //                return
-            //            }
-            //
-            //            if let error = error {
-            //
-            //                 print("发送成功")
-            //            }
-            //            
-            
-            
             
             
         }
